@@ -1,4 +1,5 @@
-html,body {
+html,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,15 +8,23 @@ html,body {
     color: #fff;
     height: 100%;
 }
-.header, .button-container {
+
+.header,
+.button-container {
     margin-bottom: 60px;
 }
-button, button:focus, button:active, {
-    outline: 0;
+
+button,
+button:focus,
+button:active,
+{
+outline: 0;
 }
+
 button {
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
 }
+
 select {
     display: inline-block;
     padding: 10px 30px;
@@ -27,20 +36,27 @@ select {
     font-size: 18px;
     background: transparent;
     outline: 0;
-    min-width: 300px;
-    max-width: 100%;
+    width: 100%;
 }
+
+select option {
+    background: #fff;
+    color: #000;
+    text-align: left;
+}
+
 .home {
     background-image: url(../img/cover.jpg);
     background-size: cover;
     background-position: bottom center;
     min-height: 95vh;
     width: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: multiply;
     padding: 20px 0;
     text-align: center;
 }
+
 .container {
     width: 90%;
     height: 100%;
@@ -52,6 +68,7 @@ select {
     align-items: center;
     justify-content: space-between;
 }
+
 .button {
     display: inline-block;
     padding: 10px 30px;
@@ -62,16 +79,20 @@ select {
     color: #fff;
     font-size: 18px;
 }
+
 .button:hover {
-    background: rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255, 0.4);
 }
+
 .button:not(:first-child) {
     margin-left: 20px;
 }
+
 .result-container {
-    margin: 40px 0;
+    margin: 0 0 120px 0;
     width: 100%;
 }
+
 .inline-form {
     display: -webkit-flex;
     display: -ms-flex;
@@ -79,19 +100,30 @@ select {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .form-item {
     padding: 10px;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background: #ffffff1c;
+    width: 100%;
+    padding: 12px 0;
+
+}
+
 @media only screen and (max-width: 600px) {
     .button {
         display: block;
     }
+
     .button:not(:first-child) {
         margin-left: 0;
         margin-top: 30px;
     }
-    .inline-form {
 
-    }
+    .inline-form {}
 
 }

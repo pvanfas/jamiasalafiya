@@ -5,6 +5,4 @@ from .models import Result
 
 
 class ResultForm(forms.Form):
-    choice = forms.ModelChoiceField(
-        queryset=Result.objects.filter(is_active=True), empty_label="Select the course"
-    )
+    choice = forms.ModelChoiceField(queryset=Result.objects.filter(is_active=True), empty_label="Select the course")
