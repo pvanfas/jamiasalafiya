@@ -1,0 +1,27 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <section class="home">
+            <div class="container">
+                <div class="header">
+                    <h1>JAMIA SALAFIYA PULIKKAL</h1>
+                </div>
+                <div class="button-container">
+                    <a href="{% url 'web:result' %}" class="button">View Results</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJg4KhU9LLJCy-xcPvhgRsIFY0p0GEm6dL4ujv2zfZK-UCxw/viewform" target="_blank" class="button">Admission Form</a>
+                </div>
+                <div class="footer">
+                    <p>Salafi Gramam, Pulikkal, Malappuram</p>
+                    <p>+91 7510 701 141, +91 9895 840 501</p>
+                </div>
+            </div>
+    </section>
+</main>
+
+{% endblock %}
+{% block javascript %}
+<script>
+
+</script>
+{% endblock %}

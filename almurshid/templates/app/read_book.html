@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'app/css/slick.css' %}">
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+	<title>Al-Murshid Magazine - Jamia Salafiya Pulikkal</title>
+
+        <!-- Primary Meta Tags -->
+    <title>Al-Murshid Magazine - Jamia Salafiya Pulikkal</title>
+    <meta name="title" content="Al-Murshid Magazine - Jamia Salafiya Pulikkal">
+    <meta name="description" content="Al-Murshid is a Malayalam yearly published college  Magazine by amia Salafiya Students Union Pulikkal">
+    <meta name="keywords" content="Al-Murshid, Magazine, Jamia Salafiya Pulikkal">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://almurshid.jamiasalafiya.in">
+    <meta property="og:title" content="Al-Murshid Magazine - Jamia Salafiya Pulikkal">
+    <meta property="og:description" content="Al-Murshid is a Malayalam yearly published college  Magazine by amia Salafiya Students Union Pulikkal">
+    <meta property="og:image" content="{{request.scheme}}://{{request.META.HTTP_HOST}}{% static 'app/images/meta.png' %}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://almurshid.jamiasalafiya.in">
+    <meta property="twitter:title" content="Al-Murshid Magazine - Jamia Salafiya Pulikkal">
+    <meta property="twitter:description" content="Al-Murshid is a Malayalam yearly published college  Magazine by amia Salafiya Students Union Pulikkal">
+    <meta property="twitter:image" content="{{request.scheme}}://{{request.META.HTTP_HOST}}{% static 'app/images/meta.png' %}">
+</head>
+<body>
+
+    <div id="adobe-dc-view"></div>
+
+	<script src="{% static 'app/js/jquery.min.js' %}"></script>
+	<script src="{% static 'app/js/slick.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.3/dist/sweetalert2.all.min.js"></script>
+	<script src="{% static 'app/js/main.js' %}"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script type="text/javascript">
+    	document.addEventListener("adobe_dc_view_sdk.ready", function(){
+    		var adobeDCView = new AdobeDC.View({clientId: "1f4fe361da1a4a35b71fc24034a577c9", divId: "adobe-dc-view"});
+    		adobeDCView.previewFile({
+    			content:{location: {url: "{{book.url}}"}},
+    			metaData:{fileName: "{{book.title}}"}
+    		}, {showAnnotationTools: false, showPrintPDF: false});
+    	});
+    </script>
+
+</body>
+</html>
